@@ -1,8 +1,7 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
 
-<table>
+<table class="ui sortable celled table">
   <thead>
     <tr>
       <th>Title</th>
@@ -16,9 +15,9 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="positive"><%= link_to 'Show', post %></td>
+        <td class="warning"><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td class="negative"><%= link_to semantic_icon('trash') +'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +25,5 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'New Post', new_post_path, class: "ui button" %>
+

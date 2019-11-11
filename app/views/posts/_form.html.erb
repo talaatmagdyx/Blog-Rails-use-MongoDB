@@ -1,4 +1,4 @@
-<%= form_with(model: post, local: true) do |form| %>
+<%= form_with(model: post, local: true, class: 'ui form')  do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -21,7 +21,9 @@
     <%= form.text_area :body %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions buttons_form">
+    <%= form.submit class: "ui button"%>
+    <%= link_to 'Back' , posts_path , class: "ui button"%>
+
   </div>
 <% end %>

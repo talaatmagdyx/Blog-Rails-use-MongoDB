@@ -7,3 +7,13 @@ $font-url: 'https://fonts.googleapis.com/css?family=Dancing+Script|Lora|Raleway|
 @import "variables";
 @import "main";
 @import "mixins";
+
+.container{
+  margin-left: 45px;
+  margin-right: 50px;
+}
+.buttons_form{
+    position: absolute;
+    margin-left: 450px;
+    margin-right: 500px;
+}
