@@ -1,24 +1,21 @@
-# README
+# Blog 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ It supports posts, categories and comments
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version `2.6.5`
 
 * System dependencies
 
-* Configuration
+`gem 'rails', '~> 6.0.0'
+`
 
-* Database creation
+`gem 'mongoid', '~> 7.0.5'
+`
 
-* Database initialization
+`gem 'semantic-ui-sass'
+`
+- add more feature soon and Full documentation 
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
